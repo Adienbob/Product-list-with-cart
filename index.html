@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Product list with cart</title>
+</head>
+<body>
+  <main class="container">
+    <section id="menu">
+      <h1>Desserts</h1>
+      <div class="menu-items"></div>
+    </section>
+    <aside class="aside-list">
+      <h2>Your Cart (0)</h2>
+      <div>
+        <section>
+          <img src="./assets/images/illustration-empty-cart.svg" alt="Empty cart illustration">
+          <p>Your added items will appear here</p>
+        </section>
+      </div>
+      <div id="confirem">
+        <div>Order total <strong>55</strong></div>
+        <p><img src="./assets/images/icon-carbon-neutral.svg" alt="Carbon neutral icon"><span>this is a <strong>carbon-neutral</strong> delivery</span></p>
+        <button aria-label="Confirm Order">Confirm Order</button>
+      </div>
+    </aside>
+  </main>
+  <div class="popup-overlay" id="popupOverlay" role="dialog" aria-modal="true" aria-labelledby="orderTitle">
+    <div class="popup-box">
+      <img src="./assets/images/icon-order-confirmed.svg" alt="Order confirmed icon">
+      <h3 id="orderTitle">Order Confirmed</h3>
+      <p>We hope you enjoy your food!</p>
+      <div id="item-list">
+        <div>Order total <strong>55</strong></div>
+      </div>
+      <button aria-label="Start New Order">Start New Order</button>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
