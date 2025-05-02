@@ -130,7 +130,7 @@ async function fetchData() {
 
          // Menu Button 
          item.append(imgContainer, category, name, price);
-         let btnCart = `<img src="/assets/images/icon-add-to-cart.svg" alt="Add to cart"> <span>Add to cart</span>`;
+         let btnCart = `<img src="./assets/images/icon-add-to-cart.svg" alt="Add to cart"> <span>Add to cart</span>`;
          menuBtn.setAttribute("class", "btn");
          menuBtn.classList.add("hover");
          menuBtn.innerHTML = btnCart;
@@ -149,9 +149,9 @@ async function fetchData() {
          function renderButtonUi() {
             if (quantity >= 1) {
                menuBtn.innerHTML = `
-               <img src="assets/images/icon-decrement-quantity.svg" class="btn-img" id="decrement" alt="decrement quantity">
+               <img src="./assets/images/icon-decrement-quantity.svg" class="btn-img" id="decrement" alt="decrement quantity">
                <span>${quantity}</span>
-               <img src="assets/images/icon-increment-quantity.svg" class="btn-img" id="increment" alt="increment quantity">`;
+               <img src="./assets/images/icon-increment-quantity.svg" class="btn-img" id="increment" alt="increment quantity">`;
                menuBtn.classList.add("active");
                menuBtn.classList.remove("hover");
 
